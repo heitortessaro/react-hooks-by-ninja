@@ -1,3 +1,5 @@
+### This project and readme were obtaing from the The Net Ninja https://www.youtube.com/playlist?list=PL4cUxeGkcC9hNokByJilPg5g9m2APUePI . I used it as an introduction to hooks.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
