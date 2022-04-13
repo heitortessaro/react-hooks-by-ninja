@@ -8,14 +8,17 @@ class ThemeContextProvider extends Component {
     light: { syntax: '#555', ui: '#ddd', bg: '#eee'},
     dark: { syntax: '#ddd', ui: '#333', bg: '#555'},
   } 
+  toggleTheme = () => {
+    this.setState((prev) => ({isLightTheme: !prev.isLightTheme}))
+  }
   render() { 
     return (
-      <ThemeContext.Provider value={{...this.state}}>
+      <ThemeContext.Provider value={{...this.state, toggleTheme: this.toggleTheme}}>
         {/* place the components of app as children of the provider */}
         {this.props.children} 
       </ThemeContext.Provider>
     );
   }
 }
- 
+
 export default ThemeContextProvider;
